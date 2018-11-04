@@ -1,0 +1,82 @@
+{
+  "name": "microweber/microweber",
+  "type": "application",
+  "description": "New generation CMS with drag and drop",
+  "keywords": [
+    "cms",
+    "drag and drop",
+    "shop",
+    "blog",
+    "framework",
+    "laravel"
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/peter-mw/laravel-tagging"
+    }
+  ],
+  "require": {
+    "laravel/framework": "5.4.*",
+    "illuminate/contracts": "5.4.*",
+    "laravel/socialite": "3.0.2",
+    "composer/composer": "v1.2.2",
+    "socialiteproviders/linkedin": "*",
+    "illuminate/support": "5.4.*",
+    "symfony/http-foundation": "*",
+    "vlucas/phpdotenv": "*",
+    "rcrowe/twigbridge": "*",
+    "graham-campbell/markdown": "*",
+    "keboola/csv": "1.1.*",
+    "omnipay/omnipay": "2.*",
+    "omnipay/stripe": "~2.0",
+    "omnipay/paypal": "~2.0",
+    "omnipay/mollie": "3.*",
+    "paragonie/random_compat": "1.*",
+    "coduo/php-humanizer": "*",
+    "omnipay/common": "*",
+    "league/csv": "^7.2",
+    "giggsey/libphonenumber-for-php": "^7.6",
+    "laravelcollective/html": "*",
+    "ezyang/htmlpurifier": "^4.8",
+    "rtconner/laravel-tagging": "dev-laravel-5",
+    "jeremeamia/superclosure": "*",
+    "arcanedev/seo-helper": "1.2",
+    "intervention/image": "^2.3",
+    "knplabs/knp-menu": "^2.2",
+    "jenssegers/agent": "~2.1",
+    "geoip2/geoip2": "~2.0",
+    "dompdf/dompdf": "0.8.2",
+    "nikic/php-parser": "3.1.5",
+    "doctrine/dbal": "2.5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/",
+      "App\\": "app/"
+    }
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "php artisan key:generate"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist",
+    "platform": {
+      "php": "5.6.4"
+    },
+    "github-protocols": [
+      "https",
+      "http",
+      "git"
+    ]
+  },
+  "minimum-stability": "dev",
+  "homepage": "http://microweber.com",
+  "license": "MIT",
+  "support": {
+    "email": "support@microweber.com",
+    "irc": "irc://irc.freenode.org/microweber"
+  }
+}
